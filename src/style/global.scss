@@ -1,0 +1,53 @@
+
+$font-color--primary: #303133;
+$font-color--conventional: #606266;
+$font-color--secondary: #909399;
+$font-color--white: #fff;
+$font-color--black: #000;
+
+$border-color--one: #dcdfe6;
+$border-color--two: #e4e7ed;
+$border-color--three: #EBEEF5;
+$border-color--four: #F2F6FC;
+
+$color--primary: #409eff;
+$color--success: #67c23a;
+$color--warning: #e6a23c;
+$color--danger: #f56c6c;
+$color--info: #909399;
+
+$background-color--primary: #409eff;
+$background-color--white: #fff;
+$background-color--black: #333;
+$background-color--transparent: transparent;
+$background-color--main: #f2f2f2;
+
+$item-margin: 10px 14px;
+$item-margin-tb: 10px 0;
+$item-margin-lr: 0 14px;
+
+@mixin width-height-100 {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin project-item {
+  padding: 0 10px;
+  border: 1px solid $border-color--one;
+  border-radius: 5px;
+  box-shadow: 0 0 5px $border-color--one;
+  background-color: $background-color--white;
+}
+
+@mixin position-button($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+@mixin vertical-horizontal-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
